@@ -1,0 +1,118 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+box-sizing: border-box;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .main{
+    width: 580px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main .searchBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .main .searchBox .query{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 60px;
+    border-radius: 20px;
+    outline: none;
+
+}
+section .main .searchBox .query:focus{
+  border: 1px solid #4285F4;
+  border-radius: 20px;
+   
+}
+
+section .main .searchBox .icons{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    pointer-events: none;
+}
+section .main .searchBox .icons img{
+    max-width: 100%;
+}
+
+
+.searchBtn{
+    margin: 0 7px;
+    margin-top: 20px;
+    padding: 9px 13px;
+    color: #555;
+    font-size: 20px;
+    border: none;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    outline: none;
+    transition: .1s;
+    cursor: pointer;
+}
+
+
+
+.searchBtn:hover{
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 0 #ccc ;
+}
+.imFeeling{
+    margin: 0 7px;
+    margin-top: 20px;
+    padding: 9px 13px;
+    color: #555;
+    font-size: 20px;
+    border:1px solid  transparent;
+    border-radius: 9px;
+    outline: none;
+    box-sizing: border-box !important;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.imFeeling:hover{
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 0 #ccc ;
+}
+
+/* ---responsiv--- */
+
+
+
+@media screen and (max-width:400px){
+ .rakib {
+        width: 205px;
+        height: auto;
+    }
+    .searchBtn {
+        padding: 7px 12px;
+        font-size: 11px;
+        border-radius: 3px;
+    }
+    .imFeeling {
+        padding: 7px 12px;
+        font-size: 11px;
+        border-radius: 3px;
+    }
+}

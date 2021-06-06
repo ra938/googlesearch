@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+
+        <div class="main">
+           <img class="rakib"  src="./img/google.png" alt="">
+           <div class="searchBox">
+               <input type="text" name=" " class="query" value="" placeholder="">
+               <div class="icons">
+                <div> <img src="./img/search.png" alt=""> </div>
+                <div> <img src="./img/mic.png" alt=""> </div>
+               </div>
+           </div>
+
+<div class="button">
+    <button class=" searchBtn"> Google Search</button>
+    <button class=" imFeeling"> I'm Feeling  lucky</button>
+</div>
+</div>
+    </section>
+
+
+    <script>
+let query = document.querySelector('.query');
+let searchBtn = document.querySelector('.searchBtn');
+let imFeeling = document.querySelector('.imFeeling');
+
+
+searchBtn.onclick = function(){
+    let url = 'https://www.google.com/search?q=' + query.value;
+    window.open(url);
+
+}
+
+imFeeling.onclick = function(){
+    let url = 'https://www.google.com/doodles';
+    window.open(url);
+}
+    </script>
+</body>
+</html>
